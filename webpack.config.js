@@ -7,6 +7,7 @@ var outputFile = libraryName + '.min.js';
 
 var config = {
   entry: __dirname + '/src/index.js',
+  mode: 'production',
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'lib'),
