@@ -1,1 +1,3 @@
+# npm machine specific or redundant files
 node_modules
+package-lock.json
