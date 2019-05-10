@@ -14,7 +14,7 @@
     "CI"
   ],
   "author": "Tianhao Zhou",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tianhaoz95/travis-and-circle-ci-github-bot/issues"
   },
