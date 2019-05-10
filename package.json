@@ -4,7 +4,7 @@
   "description": "A utility for GitHub issue and pull request automation in CircleCI and Travis CI.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"TODO: add test\""
+    "test": "./node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/tianhaoz95/travis-and-circle-ci-github-bot/issues"
   },
-  "homepage": "https://github.com/tianhaoz95/travis-and-circle-ci-github-bot#readme"
+  "homepage": "https://github.com/tianhaoz95/travis-and-circle-ci-github-bot#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }
