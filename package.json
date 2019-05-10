@@ -20,7 +20,13 @@
   },
   "homepage": "https://github.com/tianhaoz95/travis-and-circle-ci-github-bot#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "acorn": "^6.1.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.1.2",
     "jest": "^24.8.0",
+    "uglifyjs-webpack-plugin": "^2.1.2",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
   }

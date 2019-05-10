@@ -1,23 +1,39 @@
 var webpack = require('webpack');
 var path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 var libraryName = 'library';
-var outputFile = libraryName + '.js';
+var outputFile = libraryName + '.min.js';
 
 var config = {
   entry: __dirname + '/src/index.js',
   devtool: 'source-map',
   output: {
-    path: __dirname + '/lib',
+    path: path.resolve(__dirname, 'lib'),
     filename: outputFile,
     library: libraryName,
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
+  optimization: {
+    minimizer: [
+        new UglifyJsPlugin({
+            cache: true,
+            parallel: true,
+            uglifyOptions: {
+              compress: false,
+              ecma: 6,
+              mangle: true
+            },
+            sourceMap: true
+        })
+    ]
+  },
   module: {
-    loaders: [
+    rules: [
       {
         test: /(\.jsx|\.js)$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         exclude: /(node_modules|bower_components)/
       },
       {
@@ -28,8 +44,8 @@ var config = {
     ]
   },
   resolve: {
-    root: path.resolve('./src'),
-    extensions: ['', '.js']
+    modules: [__dirname, 'node_modules'],
+    extensions: ['.js']
   }
 };
 
