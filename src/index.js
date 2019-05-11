@@ -1,4 +1,4 @@
-class TestClass {
+export class TestClass {
     constructor() {
         this.add = this.add.bind(this);
     }
@@ -7,5 +7,3 @@ class TestClass {
         return a + b;
     }
 }
-
-export default TestClass;
