@@ -1,3 +1,11 @@
-exports.sanity_add = function(a, b) {
-    return a + b;
-};
+class TestClass {
+    constructor() {
+        this.add = this.add.bind(this);
+    }
+
+    add(a, b) {
+        return a + b;
+    }
+}
+
+export default TestClass;
