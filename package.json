@@ -4,6 +4,7 @@
   "description": "A utility for GitHub issue and pull request automation in CircleCI and Travis CI.",
   "main": "index.js",
   "scripts": {
+    "build": "./node_modules/.bin/webpack",
     "test": "./node_modules/jest/bin/jest.js"
   },
   "repository": {
