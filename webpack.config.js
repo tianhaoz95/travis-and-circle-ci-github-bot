@@ -9,6 +9,7 @@ var config = {
   entry: __dirname + '/src/index.js',
   mode: 'production',
   devtool: 'source-map',
+  target: 'node',
   output: {
     path: path.resolve(__dirname, 'lib'),
     filename: outputFile,

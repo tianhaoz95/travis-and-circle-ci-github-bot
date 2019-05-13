@@ -2,7 +2,7 @@
   "name": "travis-and-circle-ci-github-bot",
   "version": "1.0.0",
   "description": "A utility for GitHub issue and pull request automation in CircleCI and Travis CI.",
-  "main": "lib/library.min.js",
+  "main": "lib/index.js",
   "files": [
     "/lib"
   ],

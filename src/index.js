@@ -1,4 +1,4 @@
-export class TestClass {
+export default class TestClass {
     constructor() {
         this.add = this.add.bind(this);
     }
